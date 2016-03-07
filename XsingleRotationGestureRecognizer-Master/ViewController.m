@@ -30,6 +30,8 @@
     xuanzhuan = NO;
     
     XsingleRotationGuestreRecognizer *xs = [[XsingleRotationGuestreRecognizer alloc]initWithTarget:self action:@selector(xsHandle:)];
+//    设置为可缩放
+    xs.suofang = YES;
     [self.imgView addGestureRecognizer:xs];
     
 }
@@ -38,6 +40,8 @@
     if (xuanzhuan) {
         recognizer.view.transform = CGAffineTransformRotate(recognizer.view.transform, recognizer.rotation);
         recognizer.rotation = 0;
+        //设置缩放为yes后可以缩放这个视图
+        recognizer.view.transform = CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale);
     }
 }
 - (void)didReceiveMemoryWarning {

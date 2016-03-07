@@ -10,4 +10,6 @@
 
 @interface XsingleRotationGuestreRecognizer : UIGestureRecognizer
 @property (nonatomic, assign) CGFloat rotation;
+@property (nonatomic,assign)BOOL suofang;
+@property (nonatomic, assign) CGFloat scale;
 @end

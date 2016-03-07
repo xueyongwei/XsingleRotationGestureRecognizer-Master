@@ -38,7 +38,23 @@
     
     // 得出前后手势作用旋转角度
     [self setRotation:(currentRotation - previousRotation)];
+    if (self.suofang) {
+        [self ViewShouldsuofang:previousPoint andCur:currentPoint];
+    }
 }
+-(void)ViewShouldsuofang:(CGPoint)prevouesPoint andCur:(CGPoint)currentPoint
+{
+    UIView *view = [self view];
+    CGPoint centet = CGPointMake(CGRectGetMidX(view.bounds), CGRectGetMidY(view.bounds));
+    
+    double preLen = sqrt((prevouesPoint.x-centet.x)*(prevouesPoint.x-centet.x)+(prevouesPoint.y-centet.y)*(prevouesPoint.y-centet.y));
+    double currenLen = sqrt((currentPoint.x-centet.x)*(currentPoint.x-centet.x)+(currentPoint.y-centet.y)*(currentPoint.y-centet.y));
+    
+    double times = currenLen/preLen;
+    NSLog(@"times = %f",times);
+    [self setScale:times];
+}
+
 
 -(void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     if (self.state == UIGestureRecognizerStateChanged) {
