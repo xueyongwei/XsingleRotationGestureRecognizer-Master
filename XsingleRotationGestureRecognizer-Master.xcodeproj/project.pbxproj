@@ -13,6 +13,9 @@
 		477BBE3E1C8D654F0008D6D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477BBE3C1C8D654F0008D6D7 /* Main.storyboard */; };
 		477BBE401C8D654F0008D6D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 477BBE3F1C8D654F0008D6D7 /* Assets.xcassets */; };
 		477BBE431C8D654F0008D6D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 477BBE411C8D654F0008D6D7 /* LaunchScreen.storyboard */; };
+		477BBE4D1C8D659C0008D6D7 /* XsingleRotationGuestreRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 477BBE4C1C8D659C0008D6D7 /* XsingleRotationGuestreRecognizer.m */; };
+		477BBE4F1C8D66200008D6D7 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 477BBE4E1C8D66200008D6D7 /* 2.jpg */; };
+		477BBE511C8D66250008D6D7 /* xz.png in Resources */ = {isa = PBXBuildFile; fileRef = 477BBE501C8D66250008D6D7 /* xz.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		477BBE3F1C8D654F0008D6D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		477BBE421C8D654F0008D6D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		477BBE441C8D654F0008D6D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		477BBE4B1C8D659C0008D6D7 /* XsingleRotationGuestreRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XsingleRotationGuestreRecognizer.h; sourceTree = "<group>"; };
+		477BBE4C1C8D659C0008D6D7 /* XsingleRotationGuestreRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XsingleRotationGuestreRecognizer.m; sourceTree = "<group>"; };
+		477BBE4E1C8D66200008D6D7 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		477BBE501C8D66250008D6D7 /* xz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xz.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +65,14 @@
 		477BBE321C8D654F0008D6D7 /* XsingleRotationGestureRecognizer-Master */ = {
 			isa = PBXGroup;
 			children = (
+				477BBE4A1C8D65890008D6D7 /* XsingleRotationGuestreRecognizer */,
 				477BBE361C8D654F0008D6D7 /* AppDelegate.h */,
 				477BBE371C8D654F0008D6D7 /* AppDelegate.m */,
 				477BBE391C8D654F0008D6D7 /* ViewController.h */,
 				477BBE3A1C8D654F0008D6D7 /* ViewController.m */,
 				477BBE3C1C8D654F0008D6D7 /* Main.storyboard */,
+				477BBE4E1C8D66200008D6D7 /* 2.jpg */,
+				477BBE501C8D66250008D6D7 /* xz.png */,
 				477BBE3F1C8D654F0008D6D7 /* Assets.xcassets */,
 				477BBE411C8D654F0008D6D7 /* LaunchScreen.storyboard */,
 				477BBE441C8D654F0008D6D7 /* Info.plist */,
@@ -77,6 +87,15 @@
 				477BBE341C8D654F0008D6D7 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		477BBE4A1C8D65890008D6D7 /* XsingleRotationGuestreRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				477BBE4B1C8D659C0008D6D7 /* XsingleRotationGuestreRecognizer.h */,
+				477BBE4C1C8D659C0008D6D7 /* XsingleRotationGuestreRecognizer.m */,
+			);
+			path = XsingleRotationGuestreRecognizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +156,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477BBE511C8D66250008D6D7 /* xz.png in Resources */,
 				477BBE431C8D654F0008D6D7 /* LaunchScreen.storyboard in Resources */,
 				477BBE401C8D654F0008D6D7 /* Assets.xcassets in Resources */,
+				477BBE4F1C8D66200008D6D7 /* 2.jpg in Resources */,
 				477BBE3E1C8D654F0008D6D7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,6 +173,7 @@
 			files = (
 				477BBE3B1C8D654F0008D6D7 /* ViewController.m in Sources */,
 				477BBE381C8D654F0008D6D7 /* AppDelegate.m in Sources */,
+				477BBE4D1C8D659C0008D6D7 /* XsingleRotationGuestreRecognizer.m in Sources */,
 				477BBE351C8D654F0008D6D7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
